@@ -35,3 +35,10 @@ main.adofai
 
 # 其他
 *.swp 
+pack.md
+
+# 打包
+dist/
+build/
+ADOBase.egg-info
+*.egg-info/
