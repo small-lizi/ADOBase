@@ -1,5 +1,6 @@
 import os
 from adobase.level import ADOFAILevel
+from adobase.params import LEVEL_BASE
 
 # 使用 tkinter 文件选择器
 import tkinter as tk
@@ -19,13 +20,5 @@ if __name__ == "__main__":
         print("未选择有效文件，程序退出。")
         exit(1)
     level = ADOFAILevel.load(in_path)
-    print("\n【更多关卡信息】")
-    level.print_info('version') 
-    print("\n【编辑关卡信息】")
-    level.edit_info(version="15")
-    print("\n【验证修改】")
-    level.print_info('version')
-    print("\n【导出关卡】")
-    level.export('111.json', as_original=False)
-    print("\n【导出原始关卡】")
-    level.export('111.adofai', as_original=True)
+    level.remove_decoration(decoration_type="AddDecoration")
+    level.export("test.json", as_original=True)

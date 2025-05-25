@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ADOBase",
-    version="0.1.0",
+    version="1.0.0",
     description="为 ADOFAI 游戏的 .adofai 关卡文件提供读写、查找、增删改等操作的库",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
@@ -12,6 +12,7 @@ setup(
     python_requires=">=3.7",
     install_requires=[],
     url="https://github.com/small-lizi/ADOBase",
+    keywords=["adofai", "level", "json", "game", "parser"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
